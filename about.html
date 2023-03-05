@@ -1,136 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/bbbb.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/bbbb.jpg" type="image/x-icon" />
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-    
-        html {
-            box-sizing: border-box;
-        }
-    
-        *,
-        *:before,
-        *:after {
-            box-sizing: inherit;
-        }
-    
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+
+      @media screen and (max-width: 650px) {
         .column {
-            float: left;
-            width: 33.3%;
-            margin-bottom: 16px;
-            padding: 0 8px;
+          width: 100%;
+          display: block;
         }
-    
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin: 8px;
-        }
-    
-        .about-section {
-            padding: 50px;
-            text-align: center;
-            background-color: #474e5d;
-            color: white;
-        }
-    
-        .container {
-            padding: 0 16px;
-        }
-    
-        .container::after,
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-    
-        .title {
-            color: grey;
-        }
-    
-        .button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: #000;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-        }
-    
-        .button:hover {
-            background-color: #555;
-        }
-    
-        @media screen and (max-width: 650px) {
-            .column {
-                width: 100%;
-                display: block;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="main">
-        <div class="navbar">
-            <a href="index.html" class="Logo"><b>My</b> Website</a>
+      <div class="navbar">
+        <a href="index.html" class="Logo"><b>My</b> Website</a>
+      </div>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="menu">
+        <div class="dropdown">
+          <button class="dropbtn">
+            Activities
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="task1.html">Computer Hardware System</a>
+            <a href="task2.html">Number System</a>
+            <a href="task3.html">Data Formats</a>
+            <a href="task4.html">Operating Systems</a>
+            <a href="task5.html">Computing Platforms</a>
+            <a href="task6.html">Mobile and Games Platforms</a>
+            <a href="task7.html">Storage Platform</a>
+            <a href="task8.html">Database Platform</a>
+          </div>
         </div>
-        <!-- Float links to the right. Hide them on small screens -->
-        <div class="menu">
 
-            <div class="dropdown">
-                <button class="dropbtn">Activities
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="task1.html">Computer Hardware System</a>
-                    <a href="task2.html">Number System</a>
-                    <a href="task3.html">Data Formats</a>
-                    <a href="task4.html">Operating Systems</a>
-                    <a href="task5.html">Computing Platforms</a>
-                    <a href="task6.html">Mobile and Games Platforms</a>
-                </div>
-            </div>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-
 
     <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="img/gg.jpg" alt="Image" style="width:100%">
-                <div class="container">
-                    <h2>Ian Mark Morga</h2>
-                    <h3>CEO & Founder</h3>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>ianmark.morga@tup.edu.ph</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
+      <div class="column">
+        <div class="card">
+          <img src="img/gg.jpg" alt="Image" style="width: 100%" />
+          <div class="container">
+            <h2>Ian Mark Morga</h2>
+            <h3>CEO & Founder</h3>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>ianmark.morga@tup.edu.ph</p>
+            <p><button class="button">Contact</button></p>
+          </div>
         </div>
+      </div>
     </div>
-
-
-</body>
-
+  </body>
 </html>
